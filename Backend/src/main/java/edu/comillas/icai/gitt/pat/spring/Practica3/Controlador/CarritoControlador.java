@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 //El controlador acepta las peticiones y utiliza el modelo para procesar los datos. Luego los pasa a la vista para generar la respuesta.
+@CrossOrigin(origins = "*")
 @RestController//Estamos indicando que las peticiones y respuestas deben estar en formato JSON.
 public class CarritoControlador {
     @Autowired
